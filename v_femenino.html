@@ -17,7 +17,7 @@
 <body>
     
     <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-inverse bg-#132c33">
       <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" width="80px" height="80px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,16 +25,16 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Vestuario
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="v_femenino.html">Femenino</a>
+              <a class="dropdown-item active" href="v_femenino.html">Femenino</a>
               <a class="dropdown-item" href="v_masculino.html">Masculino</a>
             </div>
           </li>
@@ -45,10 +45,7 @@
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        
       </div>
     </nav>
     
@@ -56,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3><div class="card text-white bg-info mb-3" style="max-width: 22rem;">
+                    <h3><div class="card mb-3" style="max-width: 22rem;">
                       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -84,23 +81,15 @@
                         </a>
                       </div>
                       <div class="card-block">
-                        <h4 class="card-title">Camisa Hombre</h4>
-                        <h4 class="card-body">
-                            <ul>
-                                <li>Precio: $ 14.000</li>
-                                <li>Tallas: <ul> 
-                                    <li>S</li>
-                                    <li>M</li>
-                                    <li>L</li>
-                                    <li>XL</li>
-                                </ul></li>
-                            </ul>
+                        <h4 class="card-title">Camisa Hombre
+                            $14.000
                         </h4>
+
                       </div>
                     </div></h3>
                 </div>
                 <div class="col">
-                    <h3><div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <h3><div class="card  mb-3" style="max-width: 18rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                           <h5 class="card-title">Info card title</h5>
@@ -120,7 +109,7 @@
 
 
     <!--Footer-->
-    <footer class="footer bg-dark mt-4 py-3">
+    <footer class="footer mt-4 py-3">
       <div class="container">
           <div class="row">
               <div class="col-s, 12 col-md-2 text-center">
@@ -138,6 +127,15 @@
           </div>
       </div>
   </footer>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color:#b8b5ff;">
+    © 2020 Copyright:
+    <a class="text-white" >Grupo Peruano</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
      <!-- El orden de carga es Js, Popper, Boostrap.JS -->
      <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
      <script src="assets/js/popper.min.js"></script>
