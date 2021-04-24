@@ -16,6 +16,8 @@
     padding: 3px;
     
 }
+
+
   .boton_personalizado{
     text-decoration: none;
     text-align: text-center;
@@ -26,6 +28,11 @@
     background-color: #7868e6;
     border-radius: 3px;
     
+  }
+
+  .boton_personalizado:hover{
+    color: black;
+    background-color: #b8b5ff;
   }
 
 
