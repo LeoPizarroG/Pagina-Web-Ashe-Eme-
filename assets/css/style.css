@@ -4,9 +4,35 @@
     border-radius: 50%;
 
 }
+.card-footer{
+    text-align: center;
+    background-color: #ffffff
+}
+
+.card-text{
+    text-align: left;
+    color:  #7868e6;
+    font-size: 20;
+    padding: 3px;
+    
+}
+  .boton_personalizado{
+    text-decoration: none;
+    text-align: text-center;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #7868e6;
+    border-radius: 3px;
+    
+  }
+
 
 .card-link {
-    color: #7868e6;
+    text-align: center;
+    color: #edeef7;
+    background-color: #7868e6;
 }
 .text-primary {
     background-color: #7868e6;
@@ -15,7 +41,7 @@
     background-color: #edeef7;
 }
 .card-block {
-    background-color: #edeef7;
+    background-color: #ffffff
 }
 .footer {
     background-color: #edeef7;
