@@ -4,6 +4,10 @@
     border-radius: 50%;
 
 }
+
+.card-link {
+    color: #7868e6;
+}
 .text-primary {
     background-color: #7868e6;
 }
