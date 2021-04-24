@@ -4,6 +4,9 @@
     border-radius: 50%;
 
 }
+.fab {
+    color: #7868e6;
+}
 .card-footer{
     text-align: center;
     background-color: #ffffff
