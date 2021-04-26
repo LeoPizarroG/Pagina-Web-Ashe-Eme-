@@ -4,6 +4,25 @@
     border-radius: 50%;
 
 }
+.border-nuevo {
+  border-top: #b8b5ff;
+  border-color: #7868e6;
+}
+.card-block1 {
+  width: 340px;
+}
+.card-text1 {
+  color: #7868e6;
+  background-color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  border: #7868e6;
+  border: #7868e6;
+  
+}
+.border {
+  color: #b8b5ff;
+}
 .fab {
     color: #7868e6;
 }
