@@ -4,6 +4,41 @@
     border-radius: 50%;
 
 }
+
+.list-unstyled {
+  color: #7868e6 ;
+  text-align: left;
+}
+.newsletter {
+  padding: 10px 0;
+  background: #edeef7;
+  }
+  
+.newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 2; }
+.newsletter .content h2 {
+  color: #7868e6;
+  margin-bottom: 40px; }
+.newsletter .content .form-control {
+  height: 35px;
+  border-color: #ffffff;
+  border-radius:1;
+  }
+.newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #b8b5ff;
+  }
+.newsletter .content .btn {
+  min-height: 35px; 
+  border-radius:1;
+  background: #7868e6;
+  color: #fff;
+  font-weight:400;
+  }
 .border-nuevo {
   border-top: #b8b5ff;
   border-color: #7868e6;
@@ -54,21 +89,22 @@
 
 
 
-  .boton_personalizado{
-    text-decoration: none;
+.boton_personalizado{
+    
     text-align: text-center;
-    padding: 5px;
+    padding: 1px;
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
     background-color: #7868e6;
-    border-radius: 3px;
+    border-radius: 1px;
     
   }
 
-  .boton_personalizado:hover{
+.boton_personalizado:hover{
     color: black;
     background-color: #b8b5ff;
+    border-radius: 1;
   }
 
 
