@@ -9,7 +9,7 @@ function getData() {
         .then(data => {
 
             let author = data.results;
-            let output = "<h3><center>Usuario 1</center></h3>";
+            let output = "<h3><center>Cliente 1</center></h3>";
 
              //Recorrer datos y seleccionarlos
             author.forEach(function (lists) {
@@ -45,7 +45,7 @@ function getData() {
         .then(data => {
 
             let author = data.results;
-            let output = "<h3><center>Usuario 2</center></h3>";
+            let output = "<h3><center>Cliente 2</center></h3>";
 
              //Recorrer datos y seleccionarlos
             author.forEach(function (lists) {
@@ -81,7 +81,7 @@ function getData() {
         .then(data => {
 
             let author = data.results;
-            let output = "<h3><center>Usuario 3</center></h3>";
+            let output = "<h3><center>Cliente 3</center></h3>";
 
             //Recorrer datos y seleccionarlos
             author.forEach(function (lists) {
