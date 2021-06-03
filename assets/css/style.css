@@ -367,3 +367,57 @@
     background-color: #1f1f1f; 
     color: #f1eded; 
 }
+
+
+
+
+
+
+.wrap {
+	width: 28%;
+	max-width: 350px;
+  
+  
+	/*margin:auto;*/
+}
+
+.widget {
+	width: 40%;
+	margin: 0.5em;
+	/*margin:32px; */
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 0.5em;
+}
+
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size:0.8em;
+	margin-bottom: 0.2rem;
+	/*margin-bottom: 5px;*/
+	background: #a297eb;
+	padding: 8px;
+	width: 150%;
+}
+
+.reloj {
+	font-family: Oswald, Arial;
+	width: 150%;
+	padding: 10px;
+	font-size: 0.8em;
+	text-align: center;
+	background: #a297eb;
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 0.8rem;
+	display: block;
+}
