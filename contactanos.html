@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,9 @@
     
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <script src="https://kit.fontawesome.com/f9002255ea.js" crossorigin="anonymous"></script>
+    
+    
+    
     <title>Contactanos</title>
     
 </head>
@@ -56,7 +60,6 @@
             
            </ul>
           
-           <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
         </div>
       </nav>
 
@@ -65,143 +68,95 @@
 <!--inicio de contacto-->
 <div class="text-center card-text mt-4 border"><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">¡CONTACTANOS!</h1></div>
       <br>
-<div class="container mt-4 mb-4">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">
-          
-          <div class="card-body">
-            <form action="#" method="GET" enctype="text/plain">
-              <div class="form-group row">
-                <label class="font-weight-bold" for="rut">Rut:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Rut" name="Rut" placeholder="Ej. 20985345-k" required>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Nombre">Nombre:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Nombre" name="Nombre" placeholder="Ej. Armando" required>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Apellido">Apellido:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Apellido" name="Apellido" placeholder="Ej. House" required>
-                </div>
-                
       
-              </div>
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Email">Correo:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="email" id="Email" name="Email" placeholder="Ej. TuCorreo@Email.com" required>
-                </div>
-
-
-                
-      
-              </div>
-
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Ciudad">Ciudad:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Ciudad" name="Ciudad" placeholder="Ej. Coquimbo" required>
-                </div>
-
-                
-                
-      
-              </div>
-
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Comuna">Comuna:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Comuna" name="Comuna" placeholder="Ej. Chigualoco" required>
-                </div>
-              </div>
-
-                <div class="form-group row">
-                  <label class="font-weight-bold" for="Direccion">Direccion:</label>
-                  <div class="col-sm-12">
-                  <input class="form-control" type="text" id=">Direccion" name=">Direccion" placeholder="Ej. Salsipuedes" required>
-                  </div>
-                </div>
-
-                
-
-                
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Numero_casa">Numero Domicilio:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Numero_casa" name="Numero_casa" placeholder="Ej. 0420" required>
-                </div>
-
-                
-                
-      
-              </div>
-
-              <div class="form-group row">
-                <label class="font-weight-bold" for="Numero_Contacto">Numero Contacto:</label>
-                <div class="col-sm-12">
-                <input class="form-control" type="text" id="Numero_Contacto" name="Numero_Contacto" placeholder="Ej. +56 9 2122 2324" required>
-                </div>
-
-                
-                
-      
-              </div>
-
-              
-              <div class="form-group row">
-                <label for="Genero" class="col-sm-5 font-weight-bold">Seleccione su Genero:</label>
-                <div class="col-sm-12">
-                  <div class="form-check mb-4 mt-1">
-                    <div class="form-check-label">
-                      <label for="Femenino"class="form-check-label">
-                        <input type="radio" class="form-check-label" name="Genero" id="Femenino" value="Femenino" checked>Femenino
-                      </label>
-                    </div>
-
-                    <!--masculino-->
-                    <div class="form-check-label">
-                      <label for="Masculino"class="form-check-label">
-                        <input type="radio" class="form-check-label" name="Genero" id="Masculino" value="Masculino" checked>Masculino
-                      </label>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="form-group ">
-                  <label for="Mensaje" class="font-weight-bold" >Mensaje o Comentario:</label>
-                  <div class="col-sm-12">
-                  <textarea class="form-control" id="Mensaje" name="Mensaje" cols="118" placeholder="Ej. Escriba su mensaje" required>
-                  </textarea>
-                </div>
-                </div>
-              </div>
-              <div class="p-1 mb-1">
-
-                <div class="text-center">
-                  <button type="button" class="boton_personalizado">Enviar</button>
-                </div>
-            
-              </div>
-            </form>
-            
-          </div>
-        
+      <div class="container">
+        <div class="header2">
+          <h2>Formulario</h2>
         </div>
-
+        <form id="form" class="form">
+          <div class="form2-control">
+            <label for="username">Nombre</label>
+            <input type="text" placeholder="Elon" id="pnombre" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Apellido</label>
+            <input type="text" placeholder="Musk" id="papellido"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Email</label>
+            <input type="email" placeholder="e.musk@tesla.com" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Contraseña</label>
+            <input type="text" placeholder="Contraseña" id="password"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Confirmar contraseña</label>
+            <input type="text" placeholder="Repetir Contraseña" id="password2"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Ciudad</label>
+            <input type="text" placeholder="Santiago" id="ciudad"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Comuna</label>
+            <input type="text" placeholder="Santiago" id="comuna"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Direccion</label>
+            <input type="text" placeholder="Avenida Los Paltos" id="direccion"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Numero de Domicilio</label>
+            <input type="text" placeholder="0420" id="ndomicilio"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Numero de Contacto</label>
+            <input type="text" placeholder="9 2122 2324" id="ncontacto"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form2-control">
+            <label for="username">Comentario</label>
+            <input type="text" placeholder="Hola esta es una sugerencia" id="comentario"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          
+          <button>Submit</button>
+        </form>
       </div>
-    </div>
-    
-  </div>
-  
-</div>
+      
+      
 
 
   <!-- fin de contactanos bueno -->
@@ -331,11 +286,8 @@
        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
        <script src="assets/js/popper.min.js"></script>
        <script src="assets/js/bootstrap.min.js"></script>
-       <script type="text/javascript"> 
-        function cambiarModo() { 
-          var cuerpoweb = document.body; 
-          cuerpoweb.classList.toggle("oscuro"); 
-        } 
-      </script>
+       <script src="assets/js/script.js"></script>
+       
+       
 </body>
 </html>
