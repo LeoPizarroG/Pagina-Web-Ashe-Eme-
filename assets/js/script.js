@@ -7,7 +7,7 @@ const password2 = document.getElementById('password2');
 const ciudad = document.getElementById('ciudad');
 const comuna = document.getElementById('comuna');
 const direccion = document.getElementById('direccion');
-const ndomicilio = document.getElementById('ndomicilio');
+const rut = document.getElementById('rut');
 const ncontacto = document.getElementById('ncontacto');
 const comentario = document.getElementById('comentario');
 
@@ -28,7 +28,7 @@ function checkInputs() {
 	const ciudadValue = ciudad.value.trim();
 	const comunaValue = comuna.value.trim();
 	const direccionValue = direccion.value.trim();
-	const ndomicilioValue = ndomicilio.value.trim();
+	const rutValue = rut.value.trim();
 	const ncontactoValue = ncontacto.value.trim();
 	const comentarioValue = comentario.value.trim();
 	
@@ -85,10 +85,10 @@ function checkInputs() {
 		setSuccessFor(direccion);
 	}
 
-	if(ndomicilioValue === '') {
-		setErrorFor(ndomicilio, 'El numero de domicilio no puede estar en blanco');
+	if(rutValue.length < 9 {
+		setErrorFor(rut, 'El rut es no esta completo');
 	} else {
-		setSuccessFor(ndomicilio);
+		setSuccessFor(rut);
 	}
 
 	if(ncontactoValue === '') {
