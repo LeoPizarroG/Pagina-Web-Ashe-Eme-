@@ -1,4 +1,104 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+.header2 {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header2 h2 {
+	margin: 0;
+}
+
+.form2 {
+	padding: 30px 40px;	
+}
+
+.form2-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form2-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form2-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form2-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form2-control.success input {
+	border-color: #7868e6;
+}
+
+.form2-control.error input {
+	border-color: red;
+}
+
+.form2-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form2-control.success i.fa-check-circle {
+	color: #7868e6;
+	visibility: visible;
+}
+
+.form2-control.error i.fa-exclamation-circle {
+	color: red;
+	visibility: visible;
+}
+
+.form2-control small {
+	color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form2-control.error small {
+	visibility: visible;
+}
+
+.form2 button {
+	background-color: #8e44ad;
+	border: 2px solid #8e44ad;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+>>>>>>> Stashed changes
 
 .carousel .carousel-indicators li {
     width: 10px;
@@ -76,16 +176,6 @@
     
 }
 
-.container .form-group .btn-submit{
-  width: 100%;
-  text-align: center;
-  outline: none;
-  background:  #7868e6;
-  font-size: 16px;
-  border: none;
-  padding: 15px 0;
-  cursor: pointer;
-}
 
 
 
