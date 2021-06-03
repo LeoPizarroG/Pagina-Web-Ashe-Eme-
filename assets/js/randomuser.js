@@ -2,21 +2,16 @@
 document.getElementById('myBtn').addEventListener('click', getData);
 
 function getData() {
-    // console.log('test');
 
-    //Get API
+    //Obtener la api
     fetch('https://randomuser.me/api/?nat=es')
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
 
             let author = data.results;
-            // console.log(author);
-
-            //Get Data Value
             let output = "<h3><center>Usuario 1</center></h3>";
 
-            //Get Data Loop Through
+             //Recorrer datos y seleccionarlos
             author.forEach(function (lists) {
                 output += `
                 
@@ -39,24 +34,20 @@ function getData() {
                 
             });
 
-            //Show On Our Screen All Data
+            //Mostrar en Pantalla con la variable Outputx
             document.getElementById('output').innerHTML = output;
             
 
         });
-
+         //Obtener la api
         fetch('https://randomuser.me/api/?nat=es')
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
 
             let author = data.results;
-            // console.log(author);
-
-            //Get Data Value
             let output = "<h3><center>Usuario 2</center></h3>";
 
-            //Get Data Loop Through
+             //Recorrer datos y seleccionarlos
             author.forEach(function (lists) {
                 output += `
                 
@@ -79,24 +70,20 @@ function getData() {
                 
             });
 
-            //Show On Our Screen All Data
+            //Mostrar en Pantalla con la variable Outputx
             document.getElementById('output2').innerHTML = output;
             
 
         });
-
+         //Obtener la api
         fetch('https://randomuser.me/api/?nat=es')
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
 
             let author = data.results;
-            // console.log(author);
-
-            //Get Data Value
             let output = "<h3><center>Usuario 3</center></h3>";
 
-            //Get Data Loop Through
+            //Recorrer datos y seleccionarlos
             author.forEach(function (lists) {
                 output += `
                 
@@ -119,7 +106,7 @@ function getData() {
                 
             });
 
-            //Show On Our Screen All Data
+            //Mostrar en Pantalla con la variable Outputx
             document.getElementById('output3').innerHTML = output;
             
 
