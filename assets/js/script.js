@@ -17,6 +17,7 @@ form.addEventListener('submit', e => {
 	checkInputs();
 });
 
+
 function checkInputs() {
 	// Remover los espacios en blanco.
 	const pnombreValue = pnombre.value.trim();
@@ -98,12 +99,8 @@ function checkInputs() {
 		setSuccessFor(ncontacto);
 	}
 
-	if(comentarioValue === '') {
-		setErrorFor(comentario, 'Comentario en blanco');
-	} else {
-		setSuccessFor(comentario);
-	}
 }
+
 
 function setErrorFor(input, message) {
 	const formControl = input.parentElement;
@@ -119,4 +116,17 @@ function setSuccessFor(input) {
 	
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+function count_down(obj) {
+	var element = document.getElementById('count2');
+	 
+	element.innerHTML = 50 - obj.value.length;
+	 
+	if (50 - obj.value.length < 0) {
+		setErrorFor(comentario, 'Sobrepasas limete de comentario');
+	} 	
+	else {
+		setSuccessFor(comentario);		
+	}    
 }

@@ -172,7 +172,8 @@
           </div>
           <div class="form2-control">
             <label for="username">Comentario</label>
-            <input type="text" placeholder="Hola esta es una sugerencia" id="comentario"/>
+            <textarea  id="comentario"  onkeyup="count_down(this);" cols="95" rows="3"></textarea>
+            <span class="text-muted pull-right" id="count2">50</span>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>

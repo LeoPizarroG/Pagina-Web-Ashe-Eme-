@@ -44,16 +44,40 @@
 	width: 100%;
 }
 
+.form2-control textarea {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
 .form2-control input:focus {
 	outline: 0;
 	border-color: #777;
 }
 
+.form2-control textarea:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+
 .form2-control.success input {
 	border-color: #7868e6;
 }
 
+.form2-control.success textarea {
+	border-color: #7868e6;
+}
+
 .form2-control.error input {
+	border-color: red;
+}
+
+.form2-control.error textarea {
 	border-color: red;
 }
 
