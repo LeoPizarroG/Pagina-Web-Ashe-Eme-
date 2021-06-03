@@ -55,8 +55,7 @@
             </li>
             
            </ul>
-           <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
-
+           
            
 
            <div class="wrap">
@@ -89,6 +88,9 @@
       <!--CARDS POLERAS-->
       <h3></h3>
       <div class="text-center card-text mt-4 border"><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">¡ZAPATILLAS HOMBRE!</h1></div>
+      <button type= "button"  class="btn btn-dark" onclick = "convertirDolar()" name="dolar">Dolar</button>
+      <button type= "button"  class="btn btn-dark" onclick = "convertirPeso()" name="peso">Peso</button>
+      <button type="button"   class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
       <br>
      
               <!-- Container-->
@@ -123,7 +125,7 @@
                               </a>
                           </div>
                           <div class="card-block">
-                            <p class="card-text">Barbados Blanco <br><b> $20.900</b>
+                            <p class="card-text">Barbados Blanco <br><b id="1"> 20900</b>
                             </p>
                           
                            
@@ -163,7 +165,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Barbados Canela <br><b> $20.900</b>
+                              <p class="card-text">Barbados Canela <br><b id="2">20900</b>
                               </p>
                             
                              
@@ -203,7 +205,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Caterpilar Cafe <br><b> $59.990</b>
+                              <p class="card-text">Caterpilar Cafe <br><b id="3"> 59990</b>
                               </p>
                             
                              
@@ -247,7 +249,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Index Azul <br><b> $39.900</b>
+                              <p class="card-text">Index Azul <br><b id="4"> 39900</b>
                               </p>
                             
                              
@@ -287,7 +289,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">NewBalance Blanca <br><b> $89.990</b>
+                              <p class="card-text">NewBalance Blanca <br><b id="5"> 89990</b>
                               </p>
                             
                              
@@ -327,7 +329,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">NewBalance Azul <br><b> $89.990</b>
+                              <p class="card-text">NewBalance Azul <br><b id="6"> 89990</b>
                               </p>
                             
                              
@@ -342,6 +344,30 @@
                 </div>
             </div>
         </div>
+        <script>
+          function convertirDolar(){
+            var contador;
+            var valorDolar;
+            for(contador =1; contador<=6; contador++){
+                   valorDolar =  document.getElementById(contador);
+         
+                   document.getElementById(contador).innerHTML = (valorDolar.innerHTML /720).toFixed(2);
+            }
+          }
+         
+          function convertirPeso(){
+            var contador;
+            var valor;
+            for(contador =1; contador<=6; contador++){
+                   valor =  document.getElementById(contador);
+                   
+         
+                  
+         
+                   document.getElementById(contador).innerHTML =  Math.round(valor.innerHTML * 720);
+            }
+          }
+        </script>
 
      <!-- Footer -->
      <footer class="page-footer font-small mdb-color lighten-3 pt-4">
