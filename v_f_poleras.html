@@ -54,7 +54,7 @@
             </li>
             
            </ul>
-           <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+           
 
            
 
@@ -88,6 +88,9 @@
       <!--CARDS POLERAS-->
       <h3></h3>
       <div class="text-center card-text mt-4 border"><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">¡POLERAS MUJER!</h1></div>
+      <button type= "button"  class="btn btn-dark" onclick = "convertirDolar()" name="dolar">Dolar</button>
+      <button type= "button"  class="btn btn-dark" onclick = "convertirPeso()" name="peso">Peso</button>
+      <button type="button"   class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
       <br>
       
               <!-- Container-->
@@ -122,7 +125,7 @@
                               </a>
                           </div>
                           <div class="card-block">
-                            <p class="card-text">Blusa Tachas <br><b> $13.990</b>
+                            <p class="card-text">Blusa Tachas <br><b id="1"> 13990</b>
                             </p>
                           
                            
@@ -162,7 +165,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Polera Manga Larga <br><b> $11.990</b>
+                              <p class="card-text">Polera Manga Larga <br><b id="2"> 11990</b>
                               </p>
                             
                              
@@ -202,7 +205,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Polera Snoopy <br><b> $11.990</b>
+                              <p class="card-text">Polera Snoopy <br><b id="3"> 11990</b>
                               </p>
                             
                              
@@ -246,7 +249,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Polera Minnie <br><b> $14.990</b>
+                              <p class="card-text">Polera Minnie <br><b id="4"> 14990</b>
                               </p>
                             
                              
@@ -286,7 +289,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Polera Soda <br><b> $6.990</b>
+                              <p class="card-text">Polera Soda <br><b id="5"> 6990</b>
                               </p>
                             
                              
@@ -326,7 +329,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Polera Piolin <br><b> $8.990</b>
+                              <p class="card-text">Polera Piolin <br><b is="6"> 8990</b>
                               </p>
                             
                              
@@ -341,6 +344,30 @@
                 </div>
             </div>
         </div>
+        <script>
+          function convertirDolar(){
+            var contador;
+            var valorDolar;
+            for(contador =1; contador<=6; contador++){
+                   valorDolar =  document.getElementById(contador);
+         
+                   document.getElementById(contador).innerHTML = (valorDolar.innerHTML /720).toFixed(2);
+            }
+          }
+         
+          function convertirPeso(){
+            var contador;
+            var valor;
+            for(contador =1; contador<=6; contador++){
+                   valor =  document.getElementById(contador);
+                   
+         
+                  
+         
+                   document.getElementById(contador).innerHTML =  Math.round(valor.innerHTML * 720);
+            }
+          }
+        </script>
 
       <!-- Footer -->
       <footer class="page-footer font-small mdb-color lighten-3 pt-4">
