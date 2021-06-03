@@ -55,6 +55,34 @@
             
            </ul>
            <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+           <input type= "button" onclick = "convertirDolar()" name="dolar">Dolar</button>
+           <input type= "button" onclick = "convertirPeso()" name="peso">Peso</button>
+
+           
+
+           <div class="wrap">
+            <div class="widget">
+              <div class="fecha">
+                <p id="diaSemana" class="diaSemana">Martes</p>
+                <p id="dia" class="dia">27</p>
+                <p>de </p>
+                <p id="mes" class="mes">Octubre</p>
+                <p>del </p>
+                <p id="year" class="year">2015</p>
+              </div>
+          
+              <div class="reloj">
+                <p id="horas" class="horas">11</p>
+                <p>:</p>
+                <p id="minutos" class="minutos">48</p>
+                <p>:</p>
+                <div class="caja-segundos">
+                  <p id="ampm" class="ampm">AM</p>
+                  <p id="segundos" class="segundos">12</p>
+                </div>
+              </div>
+            </div>
+          </div>
           
         </div>
       </nav>
@@ -96,7 +124,7 @@
                               </a>
                           </div>
                           <div class="card-block">
-                            <p class="card-text">Leggins Negros <br><b> $22.990</b>
+                            <p class="card-text">Leggins Negros <br><H6 id="1"> 22990</H6>
                             </p>
                           
                            
@@ -136,7 +164,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Jeans Barbados<br><b> $29.990</b>
+                              <p class="card-text">Jeans Barbados<br><H6 id="2"> 29990</H6>
                               </p>
                             
                              
@@ -176,7 +204,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Jeans Efesis <br><b> $33.990</b>
+                              <p class="card-text">Jeans Efesis <br><h6 id="3"> 33990<H6>
                               </p>
                             
                              
@@ -220,7 +248,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Jeans Tachas<br><b> $18.990</b>
+                              <p class="card-text">Jeans Tachas<br><H6 id="4"> 18990</H6>
                               </p>
                             
                              
@@ -260,7 +288,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Jeans Ellus <br><b> $25.990</b>
+                              <p class="card-text">Jeans Ellus <br><H6 id="5"> 25990</H6>
                               </p>
                             
                              
@@ -300,7 +328,7 @@
                                 </a>
                             </div>
                             <div class="card-block">
-                              <p class="card-text">Jeans Marquis <br><b> $26.990</b>
+                              <p class="card-text">Jeans Marquis <br><H6> 26990</H6>
                               </p>
                             
                              
@@ -315,6 +343,27 @@
                 </div>
             </div>
         </div>
+        <script>
+          function convertirDolar(){
+            var contador;
+            var valor;
+            for(contador =1; contador<=6; contador++){
+                   valor =  document.getElementById(contador);
+         
+                   document.getElementById(contador).innerHTML = Math.round(valor.innerHTML /720);
+              }
+             }
+         
+             function convertirPeso(){
+             var contador;
+            var valor;
+            for(contador =1; contador<=6; contador++){
+                   valor =  document.getElementById(contador);
+         
+                   document.getElementById(contador).innerHTML = valor.innerHTML * 720;
+              }
+             }
+        </script>
 
       <!-- Footer -->
       <footer class="page-footer font-small mdb-color lighten-3 pt-4">
@@ -445,5 +494,6 @@
           cuerpoweb.classList.toggle("oscuro"); 
         } 
       </script>
+      <script src="reloj.js"></script>
 </body>
 </html>
