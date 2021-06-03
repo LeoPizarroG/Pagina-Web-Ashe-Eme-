@@ -416,7 +416,11 @@
 	display: inline-block;
 }
 
-.reloj .segundos,
+.reloj .segundos {
+  font-size: 0.8rem;
+  display: block;
+
+}
 .reloj .ampm {
 	font-size: 0.8rem;
 	display: block;
