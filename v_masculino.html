@@ -57,6 +57,7 @@
           </li>
           
          </ul>
+         <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
         
       </div>
     </nav>
@@ -224,5 +225,11 @@
      <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
      <script src="assets/js/popper.min.js"></script>
      <script src="assets/js/bootstrap.min.js"></script>
+     <script type="text/javascript"> 
+      function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+      } 
+    </script>
 </body>
 </html>

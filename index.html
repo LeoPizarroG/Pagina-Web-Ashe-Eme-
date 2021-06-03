@@ -11,11 +11,16 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     
+    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <script src="https://kit.fontawesome.com/f9002255ea.js" crossorigin="anonymous"></script>
+    <script src="http://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <title>Index</title>
 </head>
 <body>
+
+  
+
     
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg" >
@@ -58,6 +63,9 @@
             
            </ul>
           
+           <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+
+           
         </div>
       </nav>
       <!--Fin Barra Navegacion-->
@@ -259,5 +267,12 @@
      <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
      <script src="assets/js/popper.min.js"></script>
      <script src="assets/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript"> 
+      function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+      } 
+    </script>
 </body>
 </html>
